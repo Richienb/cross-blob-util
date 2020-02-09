@@ -1,6 +1,6 @@
 {
 	"name": "cross-blob-util",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "blob-util with cross-platform support.",
 	"repository": "https://github.com/Richienb/cross-blob-util.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
