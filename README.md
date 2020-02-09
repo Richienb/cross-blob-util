@@ -1,41 +1,27 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Cross Blob Util [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/cross-blob-util/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/cross-blob-util)
 
-My awesome module.
+blob-util with cross-platform support.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/cross-blob-util.png)](https://npmjs.com/package/cross-blob-util)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install cross-blob-util blob-util
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const { base64StringToBlob } = require("cross-blob-util");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+base64StringToBlob(
+	"iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+	"image/png"
+);
+//=> Blob {...}
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+See https://www.npmjs.com/package/blob-util#api

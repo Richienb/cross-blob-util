@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "cross-blob-util",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "blob-util with cross-platform support.",
+	"repository": "https://github.com/Richienb/cross-blob-util.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,12 +17,31 @@
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"blob",
+		"util",
+		"browser",
+		"node",
+		"ponyfill",
+		"polyfill",
+		"cross",
+		"universal",
+		"env",
+		"environment"
+	],
+	"dependencies": {
+		"abab": "^2.0.3",
+		"cross-blob": "^1.2.1"
+	},
 	"devDependencies": {
 		"ava": "^3.2.0",
+		"blob-util": "^2.0.2",
 		"eslint-config-richienb": "^0.3.0",
+		"is-blob": "^2.1.0",
 		"xo": "^0.25.3"
+	},
+	"peerDependencies": {
+		"blob-util": "*"
 	},
 	"resolutions": {
 		"eslint": "^6.8.0"

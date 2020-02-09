@@ -1,7 +1,11 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const { btoa, atob } = require("abab")
+const Blob = require("cross-blob")
+const blobUtil = require("blob-util")
 
-	return `${input} & ${postfix}`
-}
+if (!globalThis.Blob) globalThis.Blob = Blob
+if (!globalThis.btoa) globalThis.btoa = btoa
+if (!globalThis.atob) globalThis.atob = atob
+
+module.exports = blobUtil
